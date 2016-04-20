@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
-<html data-ng-app="todoApp">
+<html ng-app="todoApp">
 <head>
     <title>TO DO List</title>
     <link href="bootstrap.css" rel="stylesheet" />
 </head>
-<body ng-controller="ToDoCtrl">
+<body ng-controller="ToDoController">
     <div class="page-header">
         <h1>
             {{todo.user}}'s To Do List
@@ -46,7 +46,12 @@
         </div>
     </div>
 </body>
-<script src="angular.js"></script>
-<script src="app.js">
+<script src="angular.min.js"></script>
+<script src="todo.module.js"></script>
+<script src="todo.service.js"></script>
+<script src="todo.filter.js"></script>
+<script src="todo.controller.js"></script>
+
+<!-- <script src="app.js"> -->
 </script>
 </html>
